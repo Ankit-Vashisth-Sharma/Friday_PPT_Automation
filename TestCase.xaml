@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TestCase" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="376,299" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TestCase" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="376,299" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -26,6 +26,14 @@
       <x:String>System.Windows.Markup</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -57,14 +65,51 @@
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="336,179" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="925,639.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:Comment sap:VirtualizedContainerService.HintSize="314,55" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Blank Test Case" />
+    <ui:Comment sap:VirtualizedContainerService.HintSize="452,89" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Blank Test Case" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Best Medical Supplies Online  Medical" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,340" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="276bba77-6522-4ab3-94d8-7099d2f44d44" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1616, 868" BrowserType="Chrome" ContentHash="TY7reidjdkGtDxdKagJ5Jw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAaCAYAAADWm14/AAAABGdBTUEAALEQa0zv0AAAACBjSFJNAACHDwAAjA8AAP1SAACBQAAAfXkAAOmLAAA85QAAGcxzPIV3AAABAWlDQ1BpY2MAACjPY2BgXJGTnFvMJMDAkJtXUhTk7qQQERmlwH6HgZFBkoGZQZPBMjG5uMAxIMCHASf4dg2oGggu64LMYiANcKakFicD6Q9AHJ9cUFTCwMAIsounvKQAxI4AskWKgI4CsnNA7HQIuwHEToKwp4DVhAQ5A9k8QLZDOhI7CYkNtQsEWJONkjORHZJcWlQGZUoB8WnGk8zJrJM4srm/CdiLBkqbKH7UnGAkYT3JjTWwPPZtdkEVa+fGWTVrMvfXXj780uD//5LUihKQZmdnAwZQGKKHDUIsfxEDg8VXBgbmCQixpJkMDNtbGRgkbiHEVBYwMPC3MDBsOw8A8P1N272DB40AAAAJcEhZcwAACxEAAAsRAX9kX5EAAAQzSURBVEhLvVZLbxxFEK7dRYITscIhiQAT49hTNWuc7V7LCAlEwN7tHpuYV4SCEMohB8DZ7tmNgAsXxC0cwgkpB14nTjgEKTLIwu7xyXaQ8gs4cuYd4xA7g6pnLNvjRIqM7ZI+1czudPdXXf1VNaA2j6C2w6hNHbWtZ34z/G9DqExI2nYPvvg8kLKATVN+Q70Ol4dqMCew7ARBIglcDfucpPFE4oSTOJFIKoB/p5OJxFcSiUeAtPkQtUlR29Xcp3f0iv+3N1CZ66hMhE0Dh/S7pVlB5TmB4AQdcQK/TQTeSiSlTuIWJN7TFp9IfJkJPEPKpqTNKin7LylzK4PdCm3W+DtUJs392cNj70P6AMDsID7kBP2cLUy3ncCbTuDKnUHLnoDAZSfwYaDIAip7KYt0Mzj6DOSRLY7K3uR3fh5qvD144annYFbQp074iP5JBN1OBC9wF3Dk/K3AViIIgFQM/aOTgNq+Rsp8Rsp+Scp8gcp+Q8peYaCyl1GZGcpSwARXSJm0X8cfwZnvYFaGv3D0icC1fMunncSPncRPnMSLBXyQiGA4qSPMP+kJWOgdeYsJ5DDek/cZ+Dl/fxq1WSFl10Jl0p6o83XaC4fnsq1fzUjQ5xzZXSEREoEwX8fyTHAMgHTsgdpWMhjvSZsybkKo4zJFMaAyP3E6mMDRqDP1e3iwdwsBSaezRej+RFBlGyTelwgsz/RWYZuFykC1ab1HZX16UMVADQP4Uhvw1Q6QMtf4jKwT+DM8+HhOYC3P7WmOMBFYma33wzp+HOqDuXp/ccl7M2oaCF6IIRiPtxH4K+zqWSfgBKVO0CmuCU5gpTjPjq0ataBntAO9jTafhWuoNgjcoK6jBQITGQHaPQJB1IInRt6DgdHzfBCvcR3wBHRn6m868NgcLy5Zfl4B6CSCk1guzrNj69MtkI3zcLzZ2UKgR3emVsID3fkOsAK+cjIAJ4OSq4XFaXZuQbMFA+NtqI55FSxtVsEydfEO/OEEXVyoYSmp+QNYcjUqTrNz41oQqhhCbkLaLPnSrUwaaHsVLqVwZej4oXnWtmStY4lVwOdg14wLU9hsAakWPy/x4qwEUub7ZxtnIX0U4Ac5UOFumEuwOMX/MxprA468Azg6CaTtom9IWYec7h1rw5kTpyonT7xZHLZ7xpEHURuCyNeBRR89NyhlprmZUWTL1LDFYbtn1WYMx8YmoS86x71jMeuQPgX7Q4C0hUAZj40U7COBQLcgbLZLrATSZoEr4XoKkO8TnoApDts9YxVUm6YUNn2rXthQgZ3GyABGZq93wMCAMqUqd0lt59cJ4KYU4F7uAHGUyla4RaO2F/z1LD8D+UWmzHViTw2VKaG/J5huVObX/I54dV9SwOYPm7ZljjhQZhi1/Y2UnfHXtf0iwHIkJuHlGD9IygZ8nQt1DP2Nc8Uh92T/ASGOckIuWcLCAAAAAElFTkSuQmCC" InformativeScreenshot="be69e50c6b97cdc75e0e3948a7a372b1.jpg" Reference="1rDoub721k--2X_7iq-QCA/FFKWyX3wGEGcnLMxoYR-6w" Selector="&lt;html app='chrome.exe' title='Best Medical Supplies Online | Medical Accessories Online | Medical Equipments Online | Medical Supply Store | Medical Equipment Store - TenTabs' /&gt;" Url="https://tentabs.in/" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
   </Sequence>
 </Activity>
